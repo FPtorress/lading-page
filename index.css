@@ -1,0 +1,146 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+.nav-links li :hover {
+    color: rgb(0, 247, 255);
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background: url(plano\ de\ fundo.jpeg) no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+#signup-form {
+    margin-top: 20px;
+}
+
+#signup-form input {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#signup-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+#signup-form button:hover {
+    background-color: #329135;
+    color: white;
+}
+
+#about, #contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#about {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: solid rgb(255, 255, 255);
+}
+
+#contact {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: solid rgb(255, 255, 255);
+}
+
+#about-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    opacity: 0;
+    text-align: center;
+}
+#about-content li {
+    list-style-type: none;
+    list-style-position: center;
+}
+#about-content.show {
+    max-height: 500px; /* Altura suficiente para todo o conteúdo */
+    opacity: 1;
+}
+
+#toggle-arrow {
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: white; /* Altere a cor conforme necessário */
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+#github:hover {
+    color: black;
+}
+
+#insta:hover {
+    color: rgb(249, 0, 83);
+}
